@@ -1,0 +1,211 @@
+/*Header*/
+
+/*Themes*/
+.darkHeaderStyle {
+    color: white;
+    background-color: rgb(36,37,38);
+}
+.lightHeaderStyle {
+    color: black;
+    background-color: rgb(255,255,255);
+}
+
+/*Other styles*/
+.headerDiv {
+    position: fixed;
+    top:0;
+    z-index: 2;
+    justify-content: space-evenly;
+    width: 100vw;
+    box-shadow:0 0 2px 0px #777;
+}
+
+.headerLeftDiv {
+    width: 25vw;
+    padding-left: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headerRightDiv {
+    width: 17vw;
+    padding-right: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headerCenterDiv {
+    width: 57vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Header Left*/
+.headerLogo{
+    padding:0px;
+    margin-right:5px;
+}
+
+.headerSearch, .headerSearchIcon {
+    border-radius: 20px;
+    width: 220px;
+    height: 15px;
+    margin: auto 0px;
+    border: none;
+}
+
+    .headerSearch::placeholder {
+        font-size:medium;
+        padding: 20px 10px;
+    }
+
+.headerSearchIcon {
+    display:none;
+    width: auto;
+    height:25px;
+    padding:10px;
+    margin:0 7px;
+    cursor:pointer;
+}
+
+/*Header Center*/
+.headerCenterIcons {
+    padding: 10px 40px;
+    font-size: x-large;
+    border-radius: 10px;
+    cursor:pointer;
+    vertical-align:middle;
+    margin:3px auto;
+}
+
+    .headerCenterIcons:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+
+.headerCenterIconDivOfGaming .headerCenterIcons{
+    font-size:large;
+    margin:5px auto;
+    padding:12px 40px;
+}
+
+.headerCenterIconDivOfHome .headerCenterIcons {
+    font-size: xx-large;
+    margin: 5px auto;
+    padding: 5px 40px;
+}
+.headerCenterIconDivOfPeople .headerCenterIcons {
+    font-size: xx-large;
+    padding:5px 40px;
+}
+
+/*Header Right*/
+.headerRightIcons {
+    font-size: x-large;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.headerRightIconDivOfMessenger {
+    transform:scale(0.8)   
+}
+
+.headerRightIcons:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.headerCenterIconDivOfLeftBarMenu {
+    display: none;
+}
+
+/*AccountMenu Main Box*/
+.accountMenuDiv {
+    position: absolute;
+    right:20px;
+    text-align: left;
+    width: 360px;
+    top:50px;
+    padding:10px 0;
+    border-radius: 10px;
+}
+
+.accountMenuSubDiv {
+    border-radius: 10px;
+    width: 85%;
+    cursor: pointer;
+    font-weight: 400;
+    padding:2px 10px;
+    margin:0 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .accountMenuSubDiv:hover {
+        background-color: rgba(255,255,255,0.1)
+    }
+
+
+.accountMenuIcon {
+    margin-right: 10px;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.1);
+    border-radius:100px;
+}
+
+.footer {
+    opacity: 0.6;
+    margin: 10px;
+    text-align: left;
+    padding: 5px;
+}
+
+/*For Responsive Page*/
+@media screen and (max-width:1260px){
+    .headerSearch {
+        display: none;
+    }
+    .headerSearchIcon{
+        display:block;
+    }
+}
+@media only screen and (max-width:1100px) {
+    .headerCenterIconDivOfLeftBarMenu {
+        display: block;
+    }
+    .headerCenterIconDivOfGaming {
+        display: none;
+    }
+    .headerLeftDiv{
+        width:20vw;
+    }
+    .headerCenterDiv {
+        width: 55vw;
+    }
+    .headerRightDiv {
+        width: 22vw;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .headerCenterDiv {
+        justify-content: center;
+    }
+    .headerCenterIcons, .headerCenterIconDivOfHome .headerCenterIcons, .headerCenterIconDivOfPeople .headerCenterIcons {
+        padding: 5px 20px;
+    }
+}
+@media only screen and (max-width:650px) {
+    .headerCenterIconDivOfHome, .headerCenterIconDivOfWatch, .headerCenterIconDivOfMarketplace, .headerCenterIconDivOfPeople{
+        display: none;
+    }
+    .headerCenterDiv {
+        justify-content: flex-start;
+    }
+    .headerCenterIconDivOfLeftBarMenu .headerCenterIcons{
+        padding:10px;
+    }
+}

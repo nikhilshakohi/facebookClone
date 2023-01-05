@@ -1,0 +1,243 @@
+/*Signup*/
+
+/*Outer Modal*/
+.signupModal {
+    width: 432px;
+    max-width: 100%;
+    margin: 50px auto;
+}
+/*Signup Main Box*/
+.signupDiv {
+    text-align: left;
+    width: 385px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    position:relative;
+}
+
+/*Header and Content Divs*/
+.signupDivHeader, .signupDivContent {
+    padding: 5px 15px;
+}
+
+/*Close button at top*/
+.signupClose{
+    position:absolute;
+    right:10px;
+    top:12px;
+    font-size:25px;
+}
+
+/*Header*/
+.signupDivHeader h1 {
+    margin: 0;
+}
+
+/*Error Div*/
+.signupAlert {
+    font-size: 11px;
+    margin: 20px auto 8px auto;
+    padding: 5px;
+    text-align: center;
+}
+.signupErrorAlert {
+    background-color: rgba(255,235,232,1);
+    color: rgba(0,0,0,0.9);
+    border: 1px solid rgba(221,60,16,1);
+}
+.signupSuccessAlert {
+    background-color: rgba(235,255,232,1);
+    color: rgba(0,0,0,0.9);
+    border: 1px solid rgba(60,221,16,1);
+}
+
+/*Error Title Divs*/
+.errorSection {
+    position: absolute;
+    background-color: rgb(190,75,73);
+    padding: 15px 10px;
+    border-radius: 3px;
+    color: white;
+    font-size: small;
+    margin-top: 50px;
+    max-width: 200px;
+    z-index: 2;
+    display: none;
+}
+.errorSection::after {
+    content: " ";
+    position: absolute;
+    margin-top: -23px;
+    margin-left: -70px;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-bottom: solid 10px rgb(190,75,73);
+}
+/*Error Display on focus*/
+.signupFirstNameInput:focus ~ .firstNameErrorDiv {
+    display: block;
+}
+.signupSurNameInput:focus ~ .surNameErrorDiv {
+    display: block;
+}
+.signupUsernameInput:focus ~ .usernameErrorDiv {
+    display: block;
+}
+.signupReUsernameInput:focus ~ .reUsernameErrorDiv {
+    display: block;
+}
+.signupPasswordInput:focus ~ .passwordErrorDiv {
+    display: block;
+}
+.signupDOBDiv:focus-within ~ .dobErrorDiv {
+    display: block;
+}
+.signupGenderInputDiv:focus-within ~ .genderErrorDiv {
+    display: block;
+}
+/*Error Divs placements*/
+.surNameErrorDiv {
+    left: 190px;
+}
+.usernameErrorDiv{
+    margin-top:3px;
+}
+.usernameErrorDiv::after {
+    margin-top:-55px;
+    margin-left:-50px;
+}
+.reUsernameErrorDiv{
+    margin-top:0px;
+}
+.reUsernameErrorDiv::after {
+    margin-top:-38px;
+    margin-left:-50px;
+}
+.passwordErrorDiv{
+    margin-top:3px;
+}
+.passwordErrorDiv::after {
+    margin-top:-55px;
+    margin-left:-120px;
+}
+.dobErrorDiv{
+    margin-top:10px;
+}
+.dobErrorDiv::after {
+    margin-top:-55px;
+    margin-left:-150px;
+}
+.genderErrorDiv{
+    margin-top:10px;
+}
+.genderErrorDiv::after {
+    margin-top:-40px;
+    margin-left:-150px;
+}
+
+/*All text Inputs*/
+.signupInput {
+    background-color: rgb(245,246,247);
+    width: stretch;
+    margin: 5px 0;
+    cursor: text;
+}
+
+/*Input FirstName, Surname*/
+.signupInputNamesDiv {
+    display: flex;
+    justify-content: space-between;
+}
+    .signupInputNamesDiv input {
+        width: 152px;
+    }
+/*DOB, Gender Div*/
+.signupDobDiv, .signupGenderDiv {
+    margin: 7px 0;
+}
+/*DOB, Gender Label*/
+.dobLabel, .genderLabel {
+    font-size: 13px;
+    opacity:0.8;
+}
+.signupLabelSmall label {
+    vertical-align:top
+}
+/*Question Mark beside DOB, Gender*/
+.questionMarkIcon {
+    opacity: 0.7;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 0 3px;
+}
+/*All Select inputs in DOB*/
+select {
+    margin: 0;
+    padding:7px;
+}
+/*[Select] Input of DOB Month*/
+.signupDOBMonth {
+    margin: 0 10px;
+}
+/*Radio Labels of Gender Inputs*/
+.signupGenderLabelF, .signupGenderLabelM, .signupGenderLabelC {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: auto 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(50,50,50,0.3);
+    cursor: pointer
+}
+/*Radio Label of Male Gender (margin only at middle label)*/
+.signupGenderLabelM {
+    margin: auto 10px;
+}
+/*Radio Inputs of Gender*/
+#signupGenderF, #signupGenderM, #signupGenderC {
+    width: auto;
+}
+/*Terms at bottom of Content*/
+.signupTerms {
+    color:rgba(0,0,0,0.7);
+    font-size: 10px;
+    line-height: 13px;
+    display: block;
+}
+/*Signup Button*/
+.signupButton {
+    width: 175px;
+    height: 36px;
+    background-color: #00a400;
+    color: white;
+    font-weight: 700;
+    padding: 0 32px;
+    margin: 20px auto;
+    display: block;
+    font-size: 17px;
+}
+
+/*Library*/
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+/*General*/
+.errorBoder {
+    border: 1px solid red;
+}

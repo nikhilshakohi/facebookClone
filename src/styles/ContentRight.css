@@ -1,0 +1,49 @@
+/*Content-Right*/
+.contentRight {
+    width: 23vw;
+    position:fixed;
+    right:0;
+    text-align: left;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.contactsDiv {
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 400;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .contactsDiv:hover {
+        background-color: rgba(255,255,255,0.1)
+    }
+
+.contactIcon {
+    margin-right: 10px;
+    padding: 7px 0;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+}
+
+.contentRightIcon {
+    transform: scale(0.7);
+}
+
+.contentRightHeading {
+    font-size: large;
+    padding: 7px;
+}
+
+/*For Responsive Page*/
+@media only screen and (max-width:900px) {
+    .contentRight {
+        width: 0;
+        display: none;
+        position: relative;
+    }
+}

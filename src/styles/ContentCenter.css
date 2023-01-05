@@ -1,0 +1,169 @@
+
+/*Content-Center Including Post styles*/
+
+/*Themes*/
+.darkPostStyle {
+    color: white;
+    background-color: rgb(36,37,38);
+}
+.lightPostStyle {
+    color: black;
+    background-color: rgb(255,255,255);
+}
+
+/*Others*/
+.contentCenter {
+    width: 50vw;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 500px;
+}
+
+    .contentCenter::-webkit-scrollbar {
+        display: none;
+    }
+
+/*Post Styles*/
+.post {
+    width: 90%;
+    max-width:600px;
+    margin: 7px 0;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 1px 1px rgba(50,50,50,0.1);
+}
+
+.postHeader {
+    justify-content: space-between;
+    padding: 10px 10px 0 5px;
+}
+
+.postHeaderDetails {
+    align-items: center;
+}
+
+.postHeaderSubDetails {
+    opacity: 0.5;
+}
+
+.postCaption {
+    padding: 0px 10px 10px 10px;
+}
+
+.postMenuIcon {
+    transform: rotate(90deg);
+    padding: 10px 12px 4px 16px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+    .postMenuIcon:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+.postContent {
+    padding-top: 10px;
+}
+
+.postImageDiv {
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    align-content: center;
+}
+
+.postImage {
+    max-width: 100%;
+}
+
+.postActionsDiv{
+    padding:0px;
+}
+
+.postFooterDetails {
+    justify-content: space-between;
+    padding: 5px 15px 2px 15px;
+    opacity: 0.5
+}
+
+.postAction {
+    align-items:center;
+    padding: 5px 20px;
+    height:30px;
+    width:120px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.postActionInput {
+    padding: 0px;
+}
+
+.postAction:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.likedButton {
+    font-weight: bold;
+    color: #3578E5;
+}
+/*Icons*/
+.icon {
+    padding: 0 10px
+}
+
+.actionIcon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right:5px;
+    padding:2px;
+}
+.postActionOfactionPhoto .actionIcon {
+    padding: 10px;
+}
+.contentCenterIcon{
+    transform:scale(0.7);
+}
+.addPostHeaderDetails{
+    width:100%
+}
+.addPostPostIcon {
+    padding: 0 0 0 10px;
+}
+.addPostInput {
+    border: none;
+    border-radius: 100px;
+    width: 100%
+}
+.addPostInput::placeholder{
+    font-size:medium;
+}
+
+/*For Responsive Page*/
+@media only screen and (max-width:1100px) and (min-width:900px) {
+    .contentCenter {
+        width: 63vw;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .contentCenter {
+        width:100%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .post {
+        width: 100%;
+    }
+    .postAction {
+        padding:0;
+    }
+}

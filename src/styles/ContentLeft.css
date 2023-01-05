@@ -1,0 +1,47 @@
+/*Content-Left*/
+.contentLeft {
+    width: 23vw;
+    position: fixed;
+    /*margin-right: 7vw;*/
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+    .contentLeft:hover, .contentRight:hover {
+        overflow-y: auto;
+    }
+
+.contentLeftLinkDiv {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 400;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .contentLeftLinkDiv:hover {
+        background-color: rgba(255,255,255,0.1)
+    }
+
+.contentLeftIcon {
+    transform:scale(0.7);
+}
+
+.footer {
+    opacity: 0.6;
+    margin: 100px 0;
+    text-align: left;
+    padding: 5px;
+}
+
+/*For Responsive Page*/
+@media only screen and (max-width:1100px){
+    .contentLeft {
+        width: 0;
+        display: none;
+    }
+}

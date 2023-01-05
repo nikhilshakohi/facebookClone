@@ -1,0 +1,127 @@
+/*Create Post*/
+
+/*Outer Modal*/
+.createPostModal {
+    width: 455px;
+    margin: 100px auto;
+    z-index:3;
+}
+/*createPost Main Box*/
+.createPostDiv {
+    text-align: left;
+    margin: auto;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    position: relative;
+}
+
+/*Header and Content Divs*/
+.createPostHeader, .createPostDivContent {
+    padding: 5px;
+}
+
+/*Close button at top*/
+.createPostClose {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    font-size: 30px;
+}
+
+/*Header*/
+.createPostDivHeader h3 {
+    padding: 15px 10px 0px 10px;
+    text-align: center;
+}
+
+/*Content Heading*/
+.createPostDivContentHeading{
+    justify-content:flex-start;
+}
+
+/*Public Display Options*/
+.createPostPublicDisplay {
+    font-size: 12px;
+    padding: 2px 5px 2px 0px;
+    width: auto;
+}
+
+/*Profile Picture Icon*/
+.icon {
+    padding: 0 10px
+}
+
+/*Input TextArea*/
+.createPostInputBox {
+    width: stretch;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    min-height: 50px;
+    max-height: 285px;
+    resize:none;
+}
+
+/*createPost Button*/
+.createPostButton {
+    width:stretch;
+    height: 34px;
+    background-color: #1877f2;
+    color: white;
+    font-weight: 500;
+    padding: 0;
+    margin: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+#createPostInputFile{
+    display:none;
+}
+
+.createPostInputFileLabel {
+    font-size: 15px;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 20px 10px 15px 10px;
+    cursor:pointer;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.createPostInputFileLabelPic{
+    height:25px;
+    width:25px;
+}
+
+.uploadedFileName, .uploadedFileProgress{
+    margin:auto;
+    display:block;
+    justify-content:center;
+    width:95%;
+}
+
+/*Library*/
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+/*For Responsive Page*/
+@media only screen and (max-width:900px) {
+    .createPostModal {
+        width:100%
+    }
+    .createPostDiv {
+        width:95%;
+    }
+}

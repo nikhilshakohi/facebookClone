@@ -1,0 +1,25 @@
+/*Home*/
+
+.homeDiv {
+    margin-top: 50px;
+}
+
+.contentLeft, .contentRight {
+    padding: 10px 0px;
+    padding-top: 10px;
+    height: 90vh;
+}
+
+/*For Responsive Page*/
+@media only screen and (max-width:1100px) and (min-width:900px) {
+    .homeDiv {
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+}
+@media only screen and (max-width:900px) {
+    .homeDiv {
+        justify-content: center;
+        align-content: center;
+    }
+}

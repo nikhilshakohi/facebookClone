@@ -1,0 +1,58 @@
+
+/*General or Default Values*/
+.flexDisplay {
+    display: flex;
+    justify-content: center;
+}
+input, button, select, textarea {
+    width:300px;
+    padding:9px;
+    margin:5px;
+    border-radius:6px;
+    border:1px solid gainsboro;
+    cursor:pointer;
+    font-family:inherit;
+}
+input, textarea{
+    cursor:text;
+}
+/*ScrollBar*/
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+    position:absolute;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    opacity: 0.3;
+}
+a {
+    text-decoration: none;
+    color: #1877f2;
+    cursor:pointer;
+}
+.link {
+    color: #385898;
+    opacity: unset;
+}
+
+    .link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+.headerLogo, .icon, .postIcon {
+    padding: 3px 3px 3px 10px;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+}
