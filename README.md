@@ -1,5 +1,5 @@
-# Facebook Clone 
-created using  
+# Facebook Clone Application
+Created using  
 `React` as front-end,  
 `Firebase` as back-end,  
 `react-icons` for Icons,  
